@@ -1,0 +1,432 @@
+<style type="text/css" id="generalStyles">
+
+*               { margin:0; padding:0;}
+body            { background:#212227; min-width:220px; }
+a               { text-decoration:none; outline:none;}
+img             { border:none; display:block;}
+h2              { max-width:320px; font:14px/20px Arial, Helvetica, sans-serif; margin:50px 0; text-align:center; } 
+
+.header         { border-width:0 0 1px 0; background:#272727; /* Old browsers *//* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI3MjcyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE0JSIgc3RvcC1jb2xvcj0iIzI3MjcyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMxJSIgc3RvcC1jb2xvcj0iIzIxMjEyMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc2JSIgc3RvcC1jb2xvcj0iIzBjMGMwYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwODA4MDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background:-moz-linear-gradient(top, #272727 0%, #272727 14%, #212121 31%, #0c0c0c 76%, #080808 100%); /* FF3.6+ */
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#272727), color-stop(14%,#272727), color-stop(31%,#212121), color-stop(76%,#0c0c0c), color-stop(100%,#080808)); /* Chrome,Safari4+ */
+background:-webkit-linear-gradient(top, #272727 0%,#272727 14%,#212121 31%,#0c0c0c 76%,#080808 100%); /* Chrome10+,Safari5.1+ */
+background:-o-linear-gradient(top, #272727 0%,#272727 14%,#212121 31%,#0c0c0c 76%,#080808 100%); /* Opera 11.10+ */
+background:-ms-linear-gradient(top, #272727 0%,#272727 14%,#212121 31%,#0c0c0c 76%,#080808 100%); /* IE10+ */
+background:linear-gradient(to bottom, #272727 0%,#272727 14%,#212121 31%,#0c0c0c 76%,#080808 100%); /* W3C */ }
+
+/*changes*/
+.header img     { padding:11px 0;padding-left: 10px;}
+
+.wrapper        { width:100%;/*width:320px;*/ margin:0 auto; }
+.main_content   { /* Old browsers *//* IE9 SVG, needs conditional override of 'filter' to 'none' */ /* FF3.6+ */
+background:-webkit-linear-gradient(top,  #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%); /* Chrome,Safari4+ */
+background:-o-linear-gradient(top,  #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%); /* Chrome10+,Safari5.1+ */
+background:-ms-linear-gradient(top,  #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%); /* Opera 11.10+ */
+background:#090909; /* IE10+ */
+background:#090909; /* W3C */ }
+.footer         { min-height:108px; padding:0; }
+
+.footer .appLinks {  max-width: 280px; width: 280px; padding-top: 0; padding-bottom: 15px; margin: 0 auto;   font: 12px/14px Arial, Helvetica, sans-serif;  color: #7d7d7d;}
+.footer .appLinks img {  
+display: inline-block;
+
+}
+
+
+#loginPage .footerHeading, #homePage .footerHeading            { max-width:300px; padding:10px; margin: 0 auto; text-align:center; font:12px/14px Arial, Helvetica, sans-serif; color:#7d7d7d; }
+.footerHeading strong     { color:#a6a6a6; font-weight:bold; }
+.footerText               { padding:0 14px; font:10px/1.3em Arial, Helvetica, sans-serif; color:#7d7d7d; text-align:left; }
+.footerText strong        { color:#a6a6a6; font-weight:bold; }
+.footerText u               { color:#696969; }
+.visitFullSite_wrapper    { padding-bottom:10px; text-align:center; position:relative; }
+.visitFullSite            { display:inline-block; font:bold 12px/14px Arial, Helvetica, sans-serif; font-weight:600; color:#cecece; text-decoration:underline; text-transform:uppercase; }
+a.visitFullSite span      { font-size:18px; }
+.visitFullSite_wrapper i    { width:9px; height:8px; margin:0 0 0 6px; display:inline-block; text-decoration:none; outline:none; line-height:9px;}
+
+.navigationPanel{ height:40px; border-bottom:1px solid #505050; background:#5c5c5c; }
+.navigationPanel .back  { width:39px; height:40px; float:left; background:url("https://www.24option.com/24option/Skins/images/Mobile/OptionFair/Sprites/general.png") no-repeat 0 -1px; cursor: pointer;}
+.navigationPanel .title { margin:0 0 0 10px; float:left; font:bold 12px/40px Arial, Helvetica, sans-serif; color:#fff; }
+.navigationPanel .home  { width:39px; height:40px; float:right; background:url("https://www.24option.com/24option/Skins/images/Mobile/OptionFair/Sprites/general.png") no-repeat -39px -1px; }
+/* loading screen */    
+.loader-wrapper {position:relative;
+    top: 0px;
+    left: 0px;
+}
+.loader         { display: none; z-index: 9999999; position: fixed; top: 45%; left: 47%; border:0; }
+.loader-default { background: none; filter: Alpha(Opacity=18); opacity: .18; width: 46px; height: 46px; margin-left: -23px; margin-top: -23px; }
+.loader-verbose { width: 200px; filter: Alpha(Opacity=88); opacity: .88; -webkit-box-shadow: 0 1px 1px -1px #fff; box-shadow: 0 1px 1px -1px #fff; height: auto; margin-left: -110px; margin-top: -43px; padding: 10px; }
+.loader-default h1 { font-size: 0; width: 0; height: 0; overflow: hidden; }
+.loader-verbose h1 { font-size: 16px; margin: 0; text-align: center; }
+.loader .icon         { background-color: #000; display: block; margin: 0; width: 44px; height: 44px; padding: 1px; -webkit-border-radius: 36px; -moz-border-radius: 36px; border-radius: 36px; }
+/* loading icon */
+.icon    { background:#666 /*{global-icon-color}*/; background:rgba(0,0,0,.4) /*{global-icon-disc}*/; -moz-border-radius:9px; -webkit-border-radius: 9px; border-radius: 9px; }
+.icon-loading { background: url('https://www.24option.com/binary/mobilehpimages/loader.gif'); -moz-background-size: 46px 46px; -o-background-size: 46px 46px; -webkit-background-size: 46px 46px; background-size: 46px 46px; }
+.bottom_risk { width: 100%; margin: 0 auto; margin-top: 10px; padding-top: 15px; font-family: Arial, sans-serif; font-size: 8px; line-height: 14px; text-transform: uppercase; border-top: 0; color:#7d7d7d; }
+.bottom_risk p { max-width: 303px; padding: 0 14px 26px; margin: 0 auto; text-align: justify; }
+
+
+</style><style type="text/css" id="homePageStyles">
+
+
+/*banners*/
+
+#playerYwlZrYsa{
+   outline:none;
+    border:none;
+}
+
+
+#homePage .banners-wrapper  { margin:0 auto; padding-top:1px; width:320px;height: 330px;}/*for noscript - the script shows it*/
+#homePage .pre-main-banner  { display: none; font-size:18px; text-align:left; padding:22px 14px 0;font-weight:bold; color:#fff; }
+#homePage .pre-main-banner>span{font-size:81px; line-height:70px; font-family:sans-serif, verdana, arial, helvetica;}
+#homePage .main-banner      { margin:0 auto;min-height:176px; max-width:309px; text-align:center; overflow:hidden;}
+#homePage .main-banner span>a    { width:96%; min-height:166px; background:url(https://www.24option.com/binary/mobilehpimages/en-main-binary-options.jpg) no-repeat transparent; display:inline-block; margin:0 auto; border:5px solid #1b1c20; border-radius:20px; }
+#homePage .btn-start-earn   { margin-top:6px; min-width:160px; text-align:center; color:#eaeef2; -moz-box-shadow:inset 1px 3px 33px -2px #34c9f6; -webkit-box-shadow:inset 1px 3px 33px -2px #34c9f6; box-shadow:inset 1px 3px 33px -2px #34c9f6; -moz-border-radius:32px; -webkit-border-radius:32px; border-radius:32px;
+  background-color:#149ceb; border:3px solid #3aa4d9; border-width:3px 0 0 3px; display:inline-block; font-family:arial; font-size:12px; font-weight:bold; padding:3px 19px; -webkit-text-shadow:0px 0px 20px #d0f5f1; text-shadow:0px 0px 20px #d0f5f1; text-decoration:none; }
+  #homePage .btn-start-earn:hover { background-color:#1390e3; }
+  #homePage .btn-start-earn:active{ position:relative; top:1px; }
+  #homePage .loginButtonBlock    {}
+  #homePage .loginButtonBlock>span{margin:0 auto; max-height:82px; text-align:left; overflow:hidden; display:inline-block;}
+  #homePage .loginButtonBlock a  { max-width:150px; height:85px; width:100%; display:inline-block; color:#fff; }
+  #homePage .education-banner{}
+
+  #homePage .education-banner a{ 
+  background:url('https://www.24option.com/binary/mainMobile-elements/images/headerButton.png') no-repeat; 
+  text-align:center; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  -webkit-background-size: cover;
+  background-size: cover; 
+  color: #000000;
+  vertical-align: middle;
+  width: 66px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+#homePage .videos-banner a          { background:url('https://www.24option.com/binary/mobilehpimages/binary-options-video.jpg') no-repeat; text-align:center; }
+#homePage .tools                    { width: 66px;   display: inline-block;   float: left;   margin-top: 8px;   margin-left: 39px;  }
+
+#homePage .header .logo {
+    display: inline-block;
+    float: left;
+}
+#homePage .header .loginButtonBlock {
+    display: inline-block;
+    float: left;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+
+#homePage .tools > div              { float:left; }
+#homePage .tools:after              { content:"."; clear:both; visibility:hidden; height:0; display:block; }
+#homePage .tools .languagesList
+,#homePage .tools .logout           {  } 
+#homePage .languagesList            { width:100%; height:24px; float:left; position:relative; }
+#homePage .languagesList div        { 
+
+    background: url('https://www.24option.com/binary/mainMobile-elements/images/headerButton.png') no-repeat;
+    text-align: center;
+    background-size: cover;
+    color: #000000;
+    vertical-align: middle;
+    width: 66px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 11px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+#homePage .bannerHeader {
+    color: #d0ad29;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+#homePage .listBoxMobile select     { width:100%; height:100%; position:absolute; left:0; top:-2px; opacity:0; cursor:pointer; border-bottom-width:0; font-family:Roboto, Helvetica, Arial, sans-serif; }
+#homePage .login                    { display:none; width:50%; height:32px; float:right; text-align:center; font:bold 12px/30px Arial, Helvetica, sans-serif; color:#000; background:url('https://www.24option.com/24option/Skins/3/CSS/mobile/images/btn_bg.png') #B8B9BB repeat-x 0 -32px; text-transform:uppercase; }
+#homePage .login a                  { display:block; cursor:pointer; }
+#homePage .noJavascriptMessage      { vertical-align:middle; padding:0 11px 20px; text-align:center; font:16px/21px Helvetica, Arial, sans-serif; /*color:#fff;*/ }
+#homePage .noJavascriptMessage span { font:bold 16px/21px Arial, Helvetica, sans-serif; color:#ffd700; }
+#homePage .footerText               { text-align:left;}
+
+/*NEW STYLES*/
+
+#homePage .registrationFormBlock #lp_form_account_iframe {
+    width: 315px;
+    height: 380px;
+    border: none;
+    position: relative;
+    top: -8px;
+
+}
+
+#homePage .header .headerBlock {
+    width: 320px;
+    margin: auto;
+    height: 40px;
+}
+
+#lp_form_account_form input {
+    text-indent: 10px;
+}
+
+#homePage .registrationFormHeader { color:#FFFFFF; font-size:17px; text-align:center; font-family:Roboto, Arial, sans-serif; font-weight:300; display: none;}
+#homePage .registrationFormBlock {
+  position: relative;
+  top: 10px;
+font-family: 'Roboto', Arial, serif;
+    text-align: center;
+}
+
+</style><style type="text/css" id="loginPageStyles">
+
+#loginPage { margin:0 auto; background:#3c3e45; /* Old browsers */ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxMiUiIHN0b3AtY29sb3I9IiMzYzNlNDUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxNiUiIHN0b3AtY29sb3I9IiMzYzNlNDUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzNSUiIHN0b3AtY29sb3I9IiMzNTM3M2QiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5OSUiIHN0b3AtY29sb3I9IiMyMDIxMjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background:-moz-linear-gradient(top,  #3c3e45 12%, #3c3e45 16%, #35373d 35%, #202125 99%); /* FF3.6+ */
+background:-webkit-gradient(linear, left top, left bottom, color-stop(12%,#3c3e45), color-stop(16%,#3c3e45), color-stop(35%,#35373d), color-stop(99%,#202125)); /* Chrome,Safari4+ */
+background:-webkit-linear-gradient(top,  #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%); /* Chrome10+,Safari5.1+ */
+background:-o-linear-gradient(top,  #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%); /* Opera 11.10+ */
+background:-ms-linear-gradient(top,  #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%); /* IE10+ */
+background:linear-gradient(to bottom,  #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%); /* W3C */ }
+#loginPage a                { text-decoration:none; outline:none;}
+#loginPage img              { border:none; display:block; margin: 0 auto;}
+#loginPage h2               { margin:10px auto 12px; font:13px/20px Arial, Helvetica, sans-serif; color:#fff; }
+
+#loginPage body             { background:#1f1f1f; }
+#loginPage .wrapper         {  }
+#loginPage .main_content    { min-height:315px; }
+#loginPage .form_wrapper    { min-height:232px; }
+#loginPage .main_content {
+    background: -webkit-linear-gradient(top, #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%);
+    background: -o-linear-gradient(top, #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%);
+    background: -ms-linear-gradient(top, #3c3e45 12%,#3c3e45 16%,#35373d 35%,#202125 99%);
+}
+
+/*form */
+#loginPage .mobileForm              { text-align:center;margin:0 auto; display:none; }
+#loginPage .mobileForm:after        { content:"."; clear:both; visibility:hidden; height:0; display:block;}
+#loginPage .mobileForm label        { position:relative; color:#797979; display:block;}
+#loginPage .mobileForm b            { display:none; }
+#loginPage .mobileForm input        { width:268px; margin:0 0 20px; padding:9px 5px; border:1px solid; border-color:#909090 #8c8c8c #5d5d5d #747474; font:16px/20px Arial, Helvetica, sans-serif; color:#8b8b8b; display:inline-block; background:#fff url('https://www.24option.com/wp-content/uploads/2012/07/sprites-repeats.png') repeat-x 0 -311px; }
+#loginPage div.form_btn             { width:272px; height:59px; margin:0 auto; border:1px solid #987d11; background:url('https://www.24option.com/binary/mobilehpimages/login_btn_bg.png') #987d11 repeat-x; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
+#loginPage .mobileForm #login       { width:271px; height:57px; border:none; font:bold 20px/47px Arial, Helvetica, sans-serif; cursor:pointer; background:none;
+    /*error val*/                                       -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
+#loginPage .formErrors              { max-width:360px; margin:5px auto 0; font:10px/2em Arial, Helvetica, sans-serif; color:#F27662; text-align:center; /*background:url("https://www.24option.com/24option/Skins/images/Mobile/OptionFair/Sprites/sprites-repeats.png") repeat-x 0 -838px;*/ }
+#loginPage .formErrors span         { padding:10px 0px 4px 0/*38px*/; display:block; /*background:url('https://www.24option.com/24option/Skins/images/Mobile/OptionFair/form-error-icon.png') no-repeat  38px 12px;*/ }
+
+#loginPage .mobileForm input.error      { background-color:#f8dbdb; border-color:#f00; }
+#loginPage .noJavascriptMessage         { padding:75px 30px 0; text-align:center; font:16px/21px Helvetica, Arial, sans-serif; color:#fff; }
+#loginPage .noJavascriptMessage span    { font:bold 16px/21px Arial, Helvetica, sans-serif; color:#ffd700; }
+
+#loginPage .openAccount_wrapper { height:73px; text-align:center; position:relative;}
+#loginPage .openAccount         { width:272px; height:39px; margin:30px auto 0; border:1px solid #f3ead4; display:block; font:bold 20px/44px Arial, Helvetica, sans-serif; color:#000; background:url('https://www.24option.com/wp-content/uploads/2012/07/openAccountBg.png') #B8B8BA repeat-x;
+-webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; -moz-box-shadow:0 0 9px #141517; -webkit-box-shadow:0 0 9px #141517; box-shadow:0 0 9px #141517; }
+#loginPage noscript .openAccount        { position:absolute; top:-30px; left:23px; background:url('https://www.24option.com/wp-content/uploads/2012/07/openAccountBg.png') repeat-x;}   
+#loginPage .visitFullSite               { margin:15px auto 10px; }
+
+
+
+
+.titleReg {
+color: #fed029;
+font-family: arial;
+font-size: 20px;
+height: 29px;
+}
+
+
+
+/*********************************       FOOTER    ************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,700');
+@font-face { font-family:'Roboto'; font-style:normal; font-weight:300; src:local('Roboto Light'), local('Roboto-Light'), url(https://themes.googleusercontent.com/static/fonts/roboto/v9/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');}
+@font-face { font-family:'Roboto'; font-style:normal; font-weight:400; src:local('Roboto Regular'), local('Roboto-Regular'), url(https://themes.googleusercontent.com/static/fonts/roboto/v9/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');}
+@font-face { font-family:'Roboto'; font-style:normal; font-weight: 700; src:local('Roboto Bold'), local('Roboto-Bold'), url(https://themes.googleusercontent.com/static/fonts/roboto/v9/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');}
+
+
+#footer {
+    width: 320px;
+    margin: 0 auto;
+    border-top: 1px solid #252528;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    position: relative;
+    top: 170px;
+}
+
+    #footer > div {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #footer > :first-child {
+        border-bottom: 1px solid #474747;
+    }
+
+    #footer .logo {
+        width: 137px;
+        height: 24px;
+        margin: 0 auto;
+        padding-top: 20px;
+    margin-bottom: 10px;
+    }
+
+        #footer .logo img {
+            width: 137px;
+            height: 24px;
+        }
+
+    #footer .nav {
+        padding-bottom: 16px;
+    }
+
+        #footer .nav li {
+            font-family: Arial,sans-serif;
+            display: inline-block;
+            font-size: 10px;
+            height: 10px;
+      margin-top: 4px;
+            line-height: 10px;
+            letter-spacing: 0;
+            text-align: center;
+        }
+
+        #footer .nav a {
+            color: inherit;
+        }
+
+    #footer:after {
+        content: ".";
+        clear: both;
+        visibility: hidden;
+    }
+
+    #footer .logo img {
+        width: 137px;
+        height: 24px;
+    }
+
+    #footer .nav {
+        min-width: 260px;
+        max-width: 370px;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 14px;
+        border-top: 1px solid #474747
+    }
+
+        #footer .nav li {
+            font-family: Arial,sans-serif;
+            display: inline-block;
+            font-size: 10px;
+            height: 10px;
+            line-height: 10px;
+            letter-spacing: 0;
+            text-align: center;
+        }
+
+        #footer .nav a {
+            color: inherit;
+        }
+
+    #footer:after {
+        content: ".";
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        display: table;
+
+    }
+
+    #footer .bottom_risk {
+        width: 100%;
+        max-width: 303px;
+        margin: 0 auto;
+        padding-top: 15px;
+        font-family: Arial,sans-serif;
+        font-size: 10px;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+
+        #footer .bottom_risk p {
+            max-width: 314px;
+            padding: 0 14px 26px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+
+.share-btus img {
+    float: left;
+    padding: 2px !important;
+width: 146px !important;
+}
+.share-btus {
+    position: relative;
+    top: 5px;
+    height: 76px;
+    background: transparent;
+    width: 300px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+}
+
+
+
+#footer .logo img{
+    display: none;
+}
+
+#footer .logo div{
+    width: 320px;
+    height: 36px;
+    background-size: 100%;
+    background-image: url('https://www.24option.com/binary/lp-jsp/mobilefooter/images/juventusFooterLogo.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    left: -91px;
+    top: 72px;
+}
+#footer .nav{
+    padding-top: 39px !important;
+    padding-bottom:8px !important;
+}
+
+.share-btus{
+    height: 0px !important;
+    top: -14px !important;
+}
+
+.registrationFormBlock span{
+  color:  #f4d900;
+}
+
+
+#footer .logo{
+    height: 0px !important;
+}
+
+/*********** END FOOTER **********/
+</style>
